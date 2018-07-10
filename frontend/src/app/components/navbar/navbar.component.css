@@ -1,22 +1,3 @@
-.navbar {
-    background-color: #3FAC93;
-    box-shadow: 0 0 40px 0 #00000042;
-    z-index: 1000;
-    height: 3em;
-    width: 100%;
-}
-
-.material-icons.md-light { 
-    color: rgba(255, 255, 255, 1); 
-    padding-bottom: 2px;
-}
-img {
-    padding-left: 16px;
-    display: block;
-    width: 100%;
-    max-width: 7rem;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -25,53 +6,63 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  
+}
 
-  .sidenav-container {
+.navbar {
+    background-color: #3FAC93;
+    box-shadow: 0 0 40px 0 #00000042;
+    z-index: 1000;
+    height: 3em;
+    width: 100%;
+}
+
+.logo {
+    padding-left: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 7rem;
+}
+
+.icon_light { 
+    color: #ffffff; 
+    padding-bottom: 0.125rem;
+}
+
+.sidenav-container {
     flex: 1;
-  }
+}
 
-  mat-sidenav {
-      background-color: #2D3B44;
-      width: 15rem;
-      z-index: 2000;
+mat-sidenav {
+    background-color: #2D3B44;
+    width: 15rem;
+    z-index: 2000;
+    padding-bottom: 3.75rem;
+}
 
-      padding-bottom:60px;
-  }
+.mat-list-item {
+    color: #ffffff;
+}
 
-  .mat-list-item {
-      color: #ffffff;
-  }
+.mat-nav-list {
+    height: 90%;
 
-  .mat-nav-list {
-      height: 90%;
+}
 
-  }
+.icon_sidebar {
+    padding-left: 0.5rem;
+    padding-right: 1em;
+ }
 
-  .sidebar {
-      padding-left: 0.5rem;
-      padding-right: 1em;
-  }
-
- .sidebar-bottom {
+.sidebar-bottom {
     position: absolute; 
     bottom: 0; 
     width: 100%;
 } 
 
-.app_launch {
-    color: #ffffff;
-    margin-left: auto;
-}
-
-.icon_launch {
-    padding-right: 0.5em;
-}
-
-.icon {
+.icon_bottom {
  margin-left: 0.6rem;
-}
+ color: #ffffff; 
+} 
 
 .icon_padding {
  display: inline;

@@ -9,6 +9,7 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 })
 export class NavbarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
+  role = 'admin';
 
   private _mobileQueryListener: () => void;
 
@@ -20,6 +21,14 @@ export class NavbarComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  userRole() {
+    if (this.role === 'teacher' || this.role ===  'student') {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 

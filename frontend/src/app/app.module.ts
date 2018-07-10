@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { Routes, RouterModule } from '@angular/router';
 
 // Components //
 import { AppComponent } from './app.component';
@@ -22,6 +23,27 @@ import { NotificationsComponent } from './components/notifications/notifications
 import { SupportComponent } from './components/support/support.component';
 
 // Servies //
+
+
+// Routes //
+
+const appRoutes: Routes = [
+  { path: 'dashboard', component: NavbarComponent, children: [
+    { path: '', component: DashboardComponent},
+    { path: 'tickets', component: TicketsComponent},
+    { path: 'devices', component: DevicesComponent},
+    { path: 'users', component: UsersComponent},
+    { path: 'bookings', component: BookingsComponent},
+    { path: 'classes', component: ClassesComponent},
+    { path: 'settings', component: SettingsComponent},
+    { path: 'logs', component: LogsComponent},
+    { path: 'account', component: AccountComponent},
+    { path: 'notifications', component: NotificationsComponent},
+    { path: 'support', component: SupportComponent}
+  ] },
+  { path: 'login', component: LoginComponent },
+  { path: 'app', component: WebappComponent }
+];
 
 // Decorator //
 @NgModule({
@@ -45,7 +67,8 @@ import { SupportComponent } from './components/support/support.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
