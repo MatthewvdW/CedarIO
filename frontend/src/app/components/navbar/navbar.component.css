@@ -1,0 +1,79 @@
+.navbar {
+    background-color: #3FAC93;
+    box-shadow: 0 0 40px 0 #00000042;
+    z-index: 1000;
+    height: 3em;
+    width: 100%;
+}
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1); 
+    padding-bottom: 2px;
+}
+img {
+    padding-left: 16px;
+    display: block;
+    width: 100%;
+    max-width: 7rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+
+  .sidenav-container {
+    flex: 1;
+  }
+
+  mat-sidenav {
+      background-color: #2D3B44;
+      width: 15rem;
+      z-index: 2000;
+
+      padding-bottom:60px;
+  }
+
+  .mat-list-item {
+      color: #ffffff;
+  }
+
+  .mat-nav-list {
+      height: 90%;
+
+  }
+
+  .sidebar {
+      padding-left: 0.5rem;
+      padding-right: 1em;
+  }
+
+ .sidebar-bottom {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+} 
+
+.app_launch {
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.icon_launch {
+    padding-right: 0.5em;
+}
+
+.icon {
+ margin-left: 0.6rem;
+}
+
+.icon_padding {
+ display: inline;
+ padding: 0.4em;
+}

@@ -1,0 +1,100 @@
+<div class="container">
+
+  <mat-toolbar class='navbar'>
+    <button mat-icon-button>
+      <mat-icon class='md-light' (click)="snav.toggle()">
+        menu
+      </mat-icon>
+    </button>
+    <img src="../../../assets/CEDARIO LOGO.png">
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav opened="true" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list class="page-wrap">
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            dashboard
+          </mat-icon>
+          <span>Dashboard</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            question_answer
+          </mat-icon>
+          <span>Tickets</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            devices
+          </mat-icon>
+          <span>Devices</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            supervisor_account
+          </mat-icon>
+          <span>Users</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            date_range
+          </mat-icon>
+          <span>Bookings</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon class='md-light sidebar'>
+            school
+          </mat-icon>
+          <span>Classes</span>
+        </a>
+        <div class="sidebar-bottom">
+          <a mat-list-item>
+            <mat-icon class='md-light sidebar'>
+              settings
+            </mat-icon>
+            <span>Settings</span>
+          </a>
+          <a mat-list-item>
+            <mat-icon class='md-light sidebar'>
+              notes
+            </mat-icon>
+            <span>Logs</span>
+          </a>
+          <mat-divider></mat-divider>
+          <div class="icon">
+            <div class="icon_padding">
+              <button mat-icon-button>
+                <mat-icon class='md-light sidebar'>
+                  account_circle
+                </mat-icon>
+              </button>
+            </div>
+            <div class="icon_padding">
+              <button mat-icon-button>
+                <mat-icon class='md-light sidebar'>
+                  open_in_new
+                </mat-icon>
+              </button>
+            </div>
+            <div class="icon_padding">
+              <button mat-icon-button>
+                <mat-icon class='md-light sidebar'>
+                  notification_important
+                </mat-icon>
+              </button>
+            </div>
+            <div class="icon_padding">
+              <button mat-icon-button>
+                <mat-icon class='md-light sidebar'>
+                  power_settings_new
+                </mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+</div>
